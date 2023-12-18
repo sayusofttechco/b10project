@@ -1,6 +1,5 @@
 #SRC Data Validation
-hive -e "use prod;
-select 'ADDRESS_hve',count(*) AS COUNT from ADDRESS_hve UNION ALL
+hive -e "use dev;
 select 'BILLING_hve',count(*) AS COUNT from BILLING_hve UNION ALL 
 select 'CITY_hve',count(*) AS COUNT from CITY_hve UNION ALL 
 select 'CLAIM_hve',count(*) AS COUNT from CLAIM_hve UNION ALL 
